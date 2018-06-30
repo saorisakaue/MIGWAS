@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import os
-import sys
+import gzip
 import pandas as pd
 import numpy as np
 from itertools import repeat
@@ -60,8 +60,8 @@ def np_random_shuffle(some_dic):
 	return dict(zip(keys, some_dic.values()))
 
 def main(database):
-	TARGETFILE = os.path.join(DATADIR,database+"_miRNAEnrichment.txt")
-	Target = pd.read_csv(TARGETFILE,delimiter='\t',index_col=0)
+	TARGETFILE = os.path.join(DATADIR,database+"_miRNAEnrichment.txt.gz")
+	Target = pd.read_csv(TARGETFILE,delimiter='\t',compression='gzip',index_col=0)
 	Target_thres = THRES_list[database]
 	Target_mir = []
 	Target_sym = []
