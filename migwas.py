@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-
 import os
 import gzip
 import pandas as pd
@@ -11,31 +10,35 @@ from scipy.stats import norm
 import math
 from multiprocessing import Pool
 import argparse
+import warnings; warnings.filterwarnings('ignore')
 
 # consts
 BASEDIR = os.path.dirname(__file__)
 DATADIR = os.path.normpath(os.path.join(BASEDIR, 'data'))
 MIRPDIR = os.path.normpath(os.path.join(BASEDIR, 'miRNA_P'))
-GENEPDIR = os.path.normpath(os.path.join(BASEDIR, 'Gene_P'))
+GENEPDIR = os.path.normpath(os.path.join(BASEDIR, 'gene_P'))
 
 # parse arguments
 parser = argparse.ArgumentParser()
 parser.add_argument('--phenotype', '-p', default=None, type=str,
-    help='Name of the phenotype of interest.',
+    help='Name of the phenotype of interest (file name prefix from minimgnt output).',
     required=True)
-parser.add_argument('--out', '-o', default=None, type=str,
-    help='Output directory name.',
+parser.add_argument('--out', '-o', default="your_migwas", type=str,
+    help='Output file prefix.',
     required=True)
-parser.add_argument('--cpus', '-n', default=None, type=int,
-    help='Number of CPUs to be used.',
-    required=True)
-parser.add_argument('--iterations', '-i', default=None, type=str,
+parser.add_argument('--cpus', '-j', default=1, type=int,
+    help='Number of CPUs to be used.')
+parser.add_argument('--iterations', '-i', default=20000, type=int,
     help='Number of iterations to simulate null distributions.',
     required=True)
 parser.add_argument('--output-candidate', '-c', default=False, action='store_true',
     help='If you want to output a list of candidate miRNAs and genes associated with the trait, set this flag.',
     required=False)
-
+args = parser.parse_args()
+iteration = args.iterations
+num_threads = int(args.cpus)
+MIRFILE = os.path.join(MIRPDIR,args.phenotype+".mir.pval.txt")
+GENEFILE = os.path.join(GENEPDIR,args.phenotype+".gene.pval.txt")
 # define arguments and values
 EXPRESSION_DATA = os.path.join(DATADIR,"qn_exp.csv")
 TISSUELIST = os.path.join(DATADIR,"human.srna.cellontology_nohead_rev.tsv")
@@ -52,14 +55,69 @@ THRES_list["miRDB"] = [65.359, 70.0753, 74.3884, 78.3834284889, 82.1096, 85.6510
 THRES_list["PITA_0_0"] = [66.12, 67.13, 68.22, 69.42, 70.84, 72.72, 75.83]
 THRES_list["TSH_Ncons"] = [0.324, 0.358, 0.391, 0.424, 0.458, 0.496, 0.538, 0.593, 0.675]
 percentile_list = (99,99.25010579,99.43765867,99.5783035,99.68377223,99.76286263,99.82217206,99.86664786,99.9)
-
+# input
+P_RNA = {}
+with open(MIRFILE, 'rt') as f:
+	for line in f:
+		line = line.rstrip().split("\t")
+		if line[1] != "NA":
+			P_RNA[line[0]] = float(line[1]) # pre-hsa to P value
+P_Gene = {}
+with open(GENEFILE, 'rt') as f:
+	for line in f:
+		line = line.rstrip().split("\t")
+		if line[1] != "NA":
+			P_Gene[line[0]] = float(line[1]) # gene symbol to P value
+pre_hsa = {}
+MIMAT = {}
+with open(IDFILE, 'rt') as f:
+	for line in f:
+		line = line.rstrip().split("\t")
+		if line[4] != "-":
+			pre_hsa[line[0]] = line[4] # MIMAT to pre-hsa
+			MIMAT[line[2]] = line[0] # mature-hsa to  MIMAT
+# get mean value for each tissue and tissue-sample dict
+Matrix_mean_exp = pd.DataFrame({'Dummy':[i for i in repeat(0, len(Exp.index))]},index=Exp.index)
+with open(TISSUELIST, 'rt') as f:
+	for line in f:
+		line = line.rstrip().split("\t")
+		tissue_name = line[0]
+		sample_list = []
+		sample_list = list(line[1].split(","))
+		Sample_exp = Exp.loc[:,sample_list]
+		Sample_mean_exp = pd.DataFrame({tissue_name:Sample_exp.mean(axis=1)},index=Sample_exp.index)
+		Matrix_mean_exp = pd.concat([Matrix_mean_exp, Sample_mean_exp],axis=1)
+Matrix_mean_exp = Matrix_mean_exp.drop("Dummy",axis=1)
+# get TSI and TSI significant miRNA list
+max_row = Matrix_mean_exp.apply(max,axis=1)
+max_row = max_row.values
+Exp_diff = 1-Matrix_mean_exp.div(max_row,axis=0)
+TSI = pd.Series(Exp_diff.apply(sum,axis=1)/(len(Matrix_mean_exp.columns)-1),index=Exp.index)
+#get tissue specific miRNA list and exp matrix
+Sig_TSI = TSI[TSI>0.7]
+Sig_TSI_miRNA = list(Sig_TSI.index)
+Analyze_miRNA = []
+for mirna in Sig_TSI_miRNA:
+	if mirna in MIMAT:
+		if MIMAT[mirna] in pre_hsa:
+			if pre_hsa[MIMAT[mirna]] in P_RNA:
+				Analyze_miRNA.append(mirna)
+# make a tissue specific high exp miRNA list (by tissue, only for TSI high miRNAs)
+Specific_exp = Matrix_mean_exp.loc[Analyze_miRNA,:]
+Ranked_exp = Specific_exp.rank()
+Tissue_sig_MIMAT = {}
+for tissue in Ranked_exp.columns:
+	Rank = pd.Series(Ranked_exp.loc[:,tissue],index=Ranked_exp.index)
+	Sig_exp = Rank[Rank>=len(Ranked_exp.index)*(Top/100)]
+	for mature_miR in Sig_exp.index:
+		Tissue_sig_MIMAT.setdefault(tissue, []).append(MIMAT[mature_miR])
 # define functions
 def np_random_shuffle(some_dic):
 	keys = list(some_dic.keys())
 	np.random.shuffle(keys)
 	return dict(zip(keys, some_dic.values()))
 
-def main(database):
+def migwas_func(database):
 	TARGETFILE = os.path.join(DATADIR,database+"_miRNAEnrichment.txt.gz")
 	Target = pd.read_csv(TARGETFILE,delimiter='\t',compression='gzip',index_col=0)
 	Target_thres = THRES_list[database]
@@ -140,69 +198,9 @@ def main(database):
 
 # main
 if __name__ == '__main__':
-    args = parser.parse_args()
-	pool = Pool(args.cpus)
-	iteration = args.iterations
-	MIRFILE = os.path.join(MIRPDIR,args.phenotype+".mir.pval.txt")
-	GENEFILE = os.path.join(MIRPDIR,args.phenotype+".gene.pval.txt")
-	# input
-	P_RNA = {}
-	with open(MIRFILE, 'rt') as f:
-		for line in f:
-			line = line.rstrip().split("\t")
-			if line[1] != "NA":
-				P_RNA[line[0]] = float(line[1]) # pre-hsa to P value
-	P_Gene = {}
-	with open(GENEFILE, 'rt') as f:
-		for line in f:
-			line = line.rstrip().split("\t")
-			if line[1] != "NA":
-				P_Gene[line[0]] = float(line[1]) # gene symbol to P value
-	pre_hsa = {}
-	MIMAT = {}
-	with open(IDFILE, 'rt') as f:
-		for line in f:
-			line = line.rstrip().split("\t")
-			if line[4] != "-":
-				pre_hsa[line[0]] = line[4] # MIMAT to pre-hsa
-				MIMAT[line[2]] = line[0] # mature-hsa to  MIMAT
-	# get mean value for each tissue and tissue-sample dict
-	Matrix_mean_exp = pd.DataFrame({'Dummy':[i for i in repeat(0, len(Exp.index))]},index=Exp.index)
-	with open(TISSUELIST, 'rt') as f:
-		for line in f:
-			line = line.rstrip().split("\t")
-			tissue_name = line[0]
-			sample_list = []
-			sample_list = list(line[1].split(","))
-			Sample_exp = Exp.loc[:,sample_list]
-			Sample_mean_exp = pd.DataFrame({tissue_name:Sample_exp.mean(axis=1)},index=Sample_exp.index)
-			Matrix_mean_exp = pd.concat([Matrix_mean_exp, Sample_mean_exp],axis=1)
-	Matrix_mean_exp = Matrix_mean_exp.drop("Dummy",axis=1)
-	# get TSI and TSI significant miRNA list
-	max_row = Matrix_mean_exp.apply(max,axis=1)
-	max_row = max_row.values
-	Exp_diff = 1-Matrix_mean_exp.div(max_row,axis=0)
-	TSI = pd.Series(Exp_diff.apply(sum,axis=1)/(len(Matrix_mean_exp.columns)-1),index=Exp.index)
-	#get tissue specific miRNA list and exp matrix
-	Sig_TSI = TSI[TSI>0.7]
-	Sig_TSI_miRNA = list(Sig_TSI.index)
-	Analyze_miRNA = []
-	for mirna in Sig_TSI_miRNA:
-		if mirna in MIMAT:
-			if MIMAT[mirna] in pre_hsa:
-				if pre_hsa[MIMAT[mirna]] in P_RNA:
-					Analyze_miRNA.append(mirna)
-	# make a tissue specific high exp miRNA list (by tissue, only for TSI high miRNAs)
-	Specific_exp = Matrix_mean_exp.loc[Analyze_miRNA,:]
-	Ranked_exp = Specific_exp.rank()
-	Tissue_sig_MIMAT = {}
-	for tissue in Ranked_exp.columns:
-		Rank = pd.Series(Ranked_exp.loc[:,tissue],index=Ranked_exp.index)
-		Sig_exp = Rank[Rank>=len(Ranked_exp.index)*(Top/100)]
-		for mature_miR in Sig_exp.index:
-			Tissue_sig_MIMAT.setdefault(tissue, []).append(MIMAT[mature_miR])
 	# exec main function with multiple cores
-	results = pool.map(main, Algo_list)
+	pool = Pool(num_threads)
+	results = pool.map(migwas_func, Algo_list)
 	# wrap up the results from each algorithm
 	Top_assoc_pair_dic = {}
 	P_t = {}
@@ -240,11 +238,8 @@ if __name__ == '__main__':
 			all_fold_t[Algo_list[i]][tissue] = np.array(all_fold_t[Algo_list[i]][tissue]) + 0.000000001
 			sumF_t[Algo_list[i]][tissue] = np.exp(np.mean(np.log(all_fold_t[Algo_list[i]][tissue])))
 	# output
-	OUTDIR=args.out
-	if not os.path.exists(OUTDIR):
-        os.makedirs(OUTDIR)
-	OUT = open(os.path.join(OUTDIR,args.phenotype+"_migwas_result.txt"), 'w')
-	print("tissue\tP_value\tFold_change", file = OUT)
+	OUT = open(os.path.join(BASEDIR,args.out+"_migwas_result.txt"), 'w')
+	print("#tissue\tP_value\tFold_change", file = OUT)
 	Total_P_t = {}
 	Total_F_t = {}
 	final_P_t = {}
@@ -267,7 +262,7 @@ if __name__ == '__main__':
 		print("{0}\t{1}\t{2}".format(tissue, final_P_t[tissue], final_F_t[tissue]), file = OUT)
 	# top output (if ordered)
 	if args.output_candidate:
-		TOP_OUT = open(os.path.join(OUTDIR,args.phenotype+"_candidates.txt"), 'w')
+		TOP_OUT = open(os.path.join(BASEDIR,args.out+"_candidates.txt"), 'w')
 		len_thres = [len(THRES_list[algo]) for algo in Algo_list]
 		for m in range(min(len_thres)):
 			thres_percentile = percentile_list[m]

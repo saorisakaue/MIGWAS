@@ -20,7 +20,7 @@ MIRBASE_MIR_FILEPATH = os.path.join(DATADIR, 'AllHumanMiRNAChrPosStrandNames_miR
 PRUNED_SNPS_FILEPATH = os.path.join(DATADIR, 'CEU_HapMap_pruned_SNPs_ChrNumPos_hg19_072111.txt')
 HOTSPOT_BOUNDARIES_FILEPATH = os.path.join(DATADIR, 'hotspot_boundaries_b37_hg19_072111.txt')
 OUTMIRDIR = os.path.join(BASEDIR, 'miRNA_P')
-OUTGENEDIR = os.path.join(BASEDIR, 'Gene_P')
+OUTGENEDIR = os.path.join(BASEDIR, 'gene_P')
 
 def minimgnt(args):
     logger = Logger(args.out + '.log')
