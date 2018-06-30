@@ -160,7 +160,7 @@ def stepcalc(allx, y, inmodel):
             ptemp = 2 * scipy.stats.t.cdf(-abs(tval), dfe - 1)
             flat_tval = tval.ravel()
             flat_ptemp = ptemp.ravel()
-            for i in xrange(flat_tval.size):
+            for i in range(flat_tval.size):
                 if np.isnan(flat_tval[i]):
                     flat_ptemp[i] = np.NaN
         else:
@@ -300,7 +300,7 @@ def stepwisefit(allx, y, inmodel = [], penter = 0.05, premove = 0.10,
             coltext = "None"
         else:
             coltext = repr(list(inmodel.nonzero()[0]))
-        print "Initial columns included: %s" % coltext
+        print("Initial columns included: {0}".format(coltext))
 
     jstep = 0
     while True:
@@ -330,8 +330,8 @@ def stepwisefit(allx, y, inmodel = [], penter = 0.05, premove = 0.10,
             break
         elif display:
             addremoved = "removed" if inmodel[nextstep] else "added"
-            print "Step %d, %s column %d, p=%f" % \
-                (jstep, addremoved, nextstep, pinout)
+            print("Step {0:d}, {1:s} column {2:d}, p={3:f}".format( \
+                jstep, addremoved, nextstep, pinout))
 
         inmodel[nextstep] = not inmodel[nextstep]
 
@@ -340,7 +340,7 @@ def stepwisefit(allx, y, inmodel = [], penter = 0.05, premove = 0.10,
             coltext = "None"
         else:
             coltext = repr(list(inmodel.nonzero()[0]))
-        print "Final columns include: %s" %coltext
+        print("Final columns include: {0}".format(coltext))
         # Possibly include more debugging information.
 
     stats.wasnan = wasnan

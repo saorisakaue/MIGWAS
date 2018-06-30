@@ -33,7 +33,7 @@ Please have a look at an example input at `./example/RA_trans.chr12.pos.P.txt` (
 This part is based on the excelent work by Masahiro Kanai, which was implemented to calculate the corrected "gene association score" from a GWAS result, according to [MAGENTA](https://www.broadinstitute.org/mpg/magenta/)'s method. For detailed explanations, please visit [the original repository](https://github.com/mkanai/minimgnt).
 The example command is as follows;
 ```bash
-$ python ./minimgnt.py score_filename --out RA_trans [--cpus 4] [--not-remove-HLA] [--remove-NA] --no-rsid
+$ python3 ./minimgnt.py score_filename --out RA_trans [--cpus 4] [--not-remove-HLA] [--remove-NA] --no-rsid
 ```
 #### Arguments and options
 * *`score_filename`* : GWAS summary statistics.
