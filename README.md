@@ -10,6 +10,7 @@ This software evaluates enrichment of genome-wide association study (GWAS) signa
 - six
 - argparse
 - math
+- multiprocessing
 - futures
 
 ## Installation
@@ -85,6 +86,3 @@ This software is freely available for academic users. Usage for commercial purpo
 Please refer to the [LICENCE](https://github.com/saorisakaue/MIGWAS/blob/master/LICENSE.md) page.
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png" /></a><br />
-
-## Contact
-Any questions? Saori Sakaue (saori.sakaue\[at\]riken.jp)
