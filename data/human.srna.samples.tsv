@@ -1,0 +1,400 @@
+﻿name	sample	description
+SRhi10010.GTGGCC.14332	FF:14332-155F3	Fibroblast - Aortic Adventitial, donor2 (nuclear fraction)
+SRhi10015.GGTAGC.14311	FF:14311-155C9	Fibroblast - Aortic Adventitial, donor3 (nuclear fraction)
+SRhi10009.ACAGTG.14302	FF:14302-155B9	Fibroblast - skin normal, donor2 (nuclear fraction)
+SRhi10009.ACTTGA.14320	FF:14320-155D9	Preadipocyte - breast, donor2 (nuclear fraction)
+SRhi10014.GATCAG.14317	FF:14317-155D6	Small Airway Epithelial Cells, donor3 (nuclear fraction)
+SRhi10015.GATCAG.14314	FF:14314-155D3	Smooth Muscle Cells - Aortic, donor0 (nuclear fraction)
+SRhi10011.CGATGT.11376	FF:11376-118A8	Adipocyte - breast, donor1
+SRhi10013.GGCTAC.11327	FF:11327-117E4	Adipocyte - breast, donor2
+SRhi10012.CGATGT.11473	FF:11473-119C6	Adipocyte - omental, donor1
+SRhi10014.GGCTAC.11474	FF:11474-119C7	Adipocyte - omental, donor2
+SRhi10002.GTGAAA.11475	FF:11475-119C8	Adipocyte - omental, donor3
+SRhi10013.CGATGT.11476	FF:11476-119C9	Adipocyte - perirenal, donor1
+SRhi10014.CGATGT.11259	FF:11259-116F8	Adipocyte - subcutaneous, donor1
+SRhi10015.GGCTAC.11336	FF:11336-117F4	Adipocyte - subcutaneous, donor2
+SRhi10003.GTGAAA.11408	FF:11408-118E4	Adipocyte - subcutaneous, donor3
+SRhi10015.CGATGT.11510	FF:11510-119G7	Alveolar Epithelial Cells, donor1
+SRhi10002.CTTGTA.11590	FF:11590-120G6	Alveolar Epithelial Cells, donor2
+SRhi10004.GTGAAA.11671	FF:11671-122G6	Alveolar Epithelial Cells, donor3
+SRhi10002.TTAGGC.11533	FF:11533-120A3	Amniotic Epithelial Cells, donor1
+SRhi10003.CTTGTA.11613	FF:11613-122A2	Amniotic Epithelial Cells, donor2
+SRhi10005.GTGAAA.11694	FF:11694-123A2	Amniotic Epithelial Cells, donor3
+SRhi10004.TTAGGC.11248	FF:11248-116E6	Anulus Pulposus Cell, donor1
+SRhi10004.CTTGTA.11463	FF:11463-119B5	Anulus Pulposus Cell, donor2
+SRhi10005.TTAGGC.11500	FF:11500-119F6	Astrocyte - cerebellum, donor1
+SRhi10006.GTGAAA.11661	FF:11661-122F5	Astrocyte - cerebellum, donor3
+SRhi10006.TTAGGC.11235	FF:11235-116D2	Astrocyte - cerebral cortex, donor1
+SRhi10006.CTTGTA.11316	FF:11316-117D2	Astrocyte - cerebral cortex, donor2
+SRhi10007.GTGAAA.11392	FF:11392-118C6	Astrocyte - cerebral cortex, donor3
+SRhi10007.TTAGGC.11511	FF:11511-119G8	Bronchial Epithelial Cell, donor1
+SRhi10007.CTTGTA.11591	FF:11591-120G7	Bronchial Epithelial Cell, donor2
+SRhi10008.GTGAAA.11453	FF:11453-119A4	Bronchial Epithelial Cell, donor4
+SRhi10008.TTAGGC.11224	FF:11224-116B9	CD14+ Monocytes, donor1
+SRhi10008.CTTGTA.11305	FF:11305-117B9	CD14+ Monocytes, donor2
+SRhi10009.GTGAAA.11381	FF:11381-118B4	CD14+ Monocytes, donor3
+SRhi10010.TGACCA.11229	FF:11229-116C5	CD14+ monocyte derived endothelial progenitor cells, donor1
+SRhi10009.AGTCAA.11310	FF:11310-117C5	CD14+ monocyte derived endothelial progenitor cells, donor2
+SRhi10009.GTGGCC.11386	FF:11386-118B9	CD14+ monocyte derived endothelial progenitor cells, donor3
+SRhi10064.CAGATC.11857	FF:11857-125A3	CD14+ monocytes - treated with BCG, donor4
+SRhi10066.TAGCTT.11544	FF:11544-120B5	CD19+ B Cells, donor1
+SRhi10066.GGCTAC.11624	FF:11624-122B4	CD19+ B Cells, donor2
+SRhi10066.CTTGTA.11705	FF:11705-123B4	CD19+ B Cells, donor3
+SRhi10009.TTAGGC.11225	FF:11225-116C1	CD4+ T Cells, donor1
+SRhi10009.CTTGTA.11306	FF:11306-117C1	CD4+ T Cells, donor2
+SRhi10010.GTGAAA.11382	FF:11382-118B5	CD4+ T Cells, donor3
+SRhi10010.TTAGGC.11226	FF:11226-116C2	CD8+ T Cells, donor1
+SRhi10010.CTTGTA.11307	FF:11307-117C2	CD8+ T Cells, donor2
+SRhi10011.GTGAAA.11383	FF:11383-118B6	CD8+ T Cells, donor3
+SRhi10011.TTAGGC.11261	FF:11261-116G1	Chondrocyte - de diff, donor1
+SRhi10011.CTTGTA.11338	FF:11338-117F6	Chondrocyte - de diff, donor2
+SRhi10012.GTGAAA.11410	FF:11410-118E6	Chondrocyte - de diff, donor3
+SRhi10012.TTAGGC.11262	FF:11262-116G2	Chondrocyte - re diff, donor1
+SRhi10012.CTTGTA.11339	FF:11339-117F7	Chondrocyte - re diff, donor2
+SRhi10013.GTGAAA.11411	FF:11411-118E7	Chondrocyte - re diff, donor3
+SRhi10014.TTAGGC.11242	FF:11242-116D9	Ciliary Epithelial Cells, donor1
+SRhi10013.CTTGTA.11323	FF:11323-117D9	Ciliary Epithelial Cells, donor2
+SRhi10014.GTGAAA.11399	FF:11399-118D4	Ciliary Epithelial Cells, donor3
+SRhi10015.TTAGGC.11526	FF:11526-119I5	Corneal Epithelial Cells, donor1
+SRhi10014.CTTGTA.11606	FF:11606-120I4	Corneal Epithelial Cells, donor2
+SRhi10015.GTGAAA.11687	FF:11687-122I4	Corneal Epithelial Cells, donor3
+SRhi10002.TGACCA.11227	FF:11227-116C3	Dendritic Cells - monocyte immature derived, donor1
+SRhi10015.CTTGTA.11308	FF:11308-117C3	Dendritic Cells - monocyte immature derived, donor2
+SRhi10002.GTGGCC.11384	FF:11384-118B7	Dendritic Cells - monocyte immature derived, donor3
+SRhi10003.TGACCA.11207	FF:11207-116A1	Endothelial Cells - Aortic, donor0
+SRhi10002.AGTCAA.11263	FF:11263-116G3	Endothelial Cells - Aortic, donor1
+SRhi10003.GTGGCC.11340	FF:11340-117F8	Endothelial Cells - Aortic, donor2
+SRhi10011.GGTAGC.11412	FF:11412-118E8	Endothelial Cells - Aortic, donor3
+SRhi10004.TGACCA.11264	FF:11264-116G4	Endothelial Cells - Artery, donor1
+SRhi10003.AGTCAA.11341	FF:11341-117F9	Endothelial Cells - Artery, donor2
+SRhi10004.GTGGCC.11413	FF:11413-118E9	Endothelial Cells - Artery, donor3
+SRhi10005.TGACCA.11236	FF:11236-116D3	Endothelial Cells - Lymphatic, donor1
+SRhi10004.AGTCAA.11317	FF:11317-117D3	Endothelial Cells - Lymphatic, donor2
+SRhi10005.GTGGCC.11393	FF:11393-118C7	Endothelial Cells - Lymphatic, donor3
+SRhi10006.TGACCA.11265	FF:11265-116G5	Endothelial Cells - Microvascular, donor1
+SRhi10006.GTGGCC.11414	FF:11414-118F1	Endothelial Cells - Microvascular, donor3
+SRhi10007.TGACCA.11266	FF:11266-116G6	Endothelial Cells - Thoracic, donor1
+SRhi10006.AGTCAA.11343	FF:11343-117G2	Endothelial Cells - Thoracic, donor2
+SRhi10008.TGACCA.11243	FF:11243-116E1	Endothelial Cells - Umbilical vein, donor1
+SRhi10007.AGTCAA.11324	FF:11324-117E1	Endothelial Cells - Umbilical vein, donor2
+SRhi10007.GTGGCC.11400	FF:11400-118D5	Endothelial Cells - Umbilical vein, donor3
+SRhi10009.TGACCA.11267	FF:11267-116G7	Endothelial Cells - Vein, donor1
+SRhi10008.AGTCAA.11344	FF:11344-117G3	Endothelial Cells - Vein, donor2
+SRhi10008.GTGGCC.11416	FF:11416-118F3	Endothelial Cells - Vein, donor3
+SRhi10011.TGACCA.11507	FF:11507-119G4	Esophageal Epithelial Cells, donor1
+SRhi10010.AGTCAA.11587	FF:11587-120G3	Esophageal Epithelial Cells, donor2
+SRhi10012.TGACCA.11245	FF:11245-116E3	Fibroblast - Aortic Adventitial, donor1
+SRhi10011.AGTCAA.11326	FF:11326-117E3	Fibroblast - Aortic Adventitial, donor2
+SRhi10012.GGTAGC.11401	FF:11401-118D6	Fibroblast - Aortic Adventitial, donor3
+SRhi10013.TGACCA.11268	FF:11268-116G8	Fibroblast - Cardiac, donor1
+SRhi10012.AGTCAA.11345	FF:11345-117G4	Fibroblast - Cardiac, donor2
+SRhi10011.GTGGCC.11417	FF:11417-118F4	Fibroblast - Cardiac, donor3
+SRhi10014.TGACCA.11492	FF:11492-119E7	Fibroblast - Choroid Plexus, donor1
+SRhi10015.TGACCA.11531	FF:11531-120A1	Fibroblast - Conjunctival, donor1
+SRhi10002.ACAGTG.11269	FF:11269-116G9	Fibroblast - Dermal, donor1
+SRhi10013.AGTCAA.11346	FF:11346-117G5	Fibroblast - Dermal, donor2
+SRhi10012.GTGGCC.11418	FF:11418-118F5	Fibroblast - Dermal, donor3
+SRhi10003.ACAGTG.11237	FF:11237-116D4	Fibroblast - Gingival, donor1
+SRhi10014.AGTCAA.11318	FF:11318-117D4	Fibroblast - Gingival, donor2
+SRhi10013.GTGGCC.11394	FF:11394-118C8	Fibroblast - Gingival, donor3
+SRhi10004.ACAGTG.11270	FF:11270-116H1	Fibroblast - Lung, donor1
+SRhi10015.AGTCAA.11347	FF:11347-117G6	Fibroblast - Lung, donor2
+SRhi10014.GTGGCC.11419	FF:11419-118F6	Fibroblast - Lung, donor3
+SRhi10005.ACAGTG.11506	FF:11506-119G3	Fibroblast - Lymphatic, donor1
+SRhi10002.AGTTCC.11586	FF:11586-120G2	Fibroblast - Lymphatic, donor2
+SRhi10015.GTGGCC.11667	FF:11667-122G2	Fibroblast - Lymphatic, donor3
+SRhi10006.ACAGTG.11540	FF:11540-120B1	Fibroblast - Mammary, donor1
+SRhi10003.AGTTCC.11620	FF:11620-122A9	Fibroblast - Mammary, donor2
+SRhi10002.GTTTCG.11701	FF:11701-123A9	Fibroblast - Mammary, donor3
+SRhi10007.ACAGTG.11238	FF:11238-116D5	Fibroblast - Periodontal Ligament, donor1
+SRhi10004.AGTTCC.11319	FF:11319-117D5	Fibroblast - Periodontal Ligament, donor2
+SRhi10003.GTTTCG.11395	FF:11395-118C9	Fibroblast - Periodontal Ligament, donor3
+SRhi10008.ACAGTG.11250	FF:11250-116E8	Fibroblast - Pulmonary Artery, donor1
+SRhi10010.ACAGTG.11535	FF:11535-120A5	Fibroblast - Villous Mesenchymal, donor1
+SRhi10011.ACAGTG.11302	FF:11302-117B6	Gingival epithelial cells, donor2 (GEA14)
+SRhi10006.AGTTCC.11379	FF:11379-118B2	Gingival epithelial cells, donor3 (GEA15)
+SRhi10013.ACAGTG.11271	FF:11271-116H2	Hair Follicle Dermal Papilla Cells, donor1
+SRhi10007.AGTTCC.11348	FF:11348-117G7	Hair Follicle Dermal Papilla Cells, donor2
+SRhi10004.GTTTCG.11420	FF:11420-118F7	Hair Follicle Dermal Papilla Cells, donor3
+SRhi10014.ACAGTG.11521	FF:11521-119H9	Hepatic Sinusoidal Endothelial Cells, donor1
+SRhi10008.AGTTCC.11601	FF:11601-120H8	Hepatic Sinusoidal Endothelial Cells, donor2
+SRhi10015.ACAGTG.11524	FF:11524-119I3	Hepatic Stellate Cells (lipocyte), donor1
+SRhi10009.AGTTCC.11604	FF:11604-120I2	Hepatic Stellate Cells (lipocyte), donor2
+SRhi10066.AGTCAA.11523	FF:11523-119I2	Hepatocyte, donor1
+SRhi10066.AGTTCC.11603	FF:11603-120I1	Hepatocyte, donor2
+SRhi10066.ATGTCA.11684	FF:11684-122I1	Hepatocyte, donor3
+SRhi10002.GCCAAT.11246	FF:11246-116E4	Intestinal epithelial cells (polarized), donor1
+SRhi10003.GCCAAT.11272	FF:11272-116H3	Keratinocyte - epidermal, donor1
+SRhi10010.AGTTCC.11349	FF:11349-117G8	Keratinocyte - epidermal, donor2
+SRhi10005.GTTTCG.11421	FF:11421-118F8	Keratinocyte - epidermal, donor3
+SRhi10004.GCCAAT.11251	FF:11251-116E9	Keratinocyte - oral, donor1
+SRhi10005.GCCAAT.11527	FF:11527-119I6	Keratocytes, donor1
+SRhi10011.AGTTCC.11607	FF:11607-120I5	Keratocytes, donor2
+SRhi10006.GCCAAT.11232	FF:11232-116C8	Macrophage - monocyte derived, donor1
+SRhi10012.AGTTCC.11313	FF:11313-117C8	Macrophage - monocyte derived, donor2
+SRhi10006.GTTTCG.11389	FF:11389-118C3	Macrophage - monocyte derived, donor3
+SRhi10007.GCCAAT.11273	FF:11273-116H4	Mammary Epithelial Cell, donor1
+SRhi10013.AGTTCC.11350	FF:11350-117G9	Mammary Epithelial Cell, donor2
+SRhi10007.GTTTCG.11422	FF:11422-118F9	Mammary Epithelial Cell, donor3
+SRhi10008.GCCAAT.11487	FF:11487-119E2	Mast cell - stimulated, donor1
+SRhi10009.GCCAAT.11565	FF:11565-120D8	Mast cell, donor2
+SRhi10014.AGTTCC.11566	FF:11566-120D9	Mast cell, donor3
+SRhi10008.GTTTCG.11567	FF:11567-120E1	Mast cell, donor4
+SRhi10010.GCCAAT.11274	FF:11274-116H5	Melanocyte - light, donor1
+SRhi10015.AGTTCC.11351	FF:11351-117H1	Melanocyte - light, donor2
+SRhi10009.GTTTCG.11423	FF:11423-118G1	Melanocyte - light, donor3
+SRhi10011.GCCAAT.11493	FF:11493-119E8	Meningeal Cells, donor1
+SRhi10002.ATGTCA.11573	FF:11573-120E7	Meningeal Cells, donor2
+SRhi10006.CAGATC.11219	FF:11219-116B4	Mesenchymal Stem Cells - Vertebral, donor1
+SRhi10007.CAGATC.11548	FF:11548-120B9	Mesenchymal Stem Cells - Wharton's Jelly, donor1
+SRhi10012.GCCAAT.11217	FF:11217-116B2	Mesenchymal Stem Cells - adipose, donor0
+SRhi10015.GCCAAT.11537	FF:11537-120A7	Mesenchymal Stem Cells - adipose, donor1
+SRhi10003.ATGTCA.11617	FF:11617-122A6	Mesenchymal Stem Cells - adipose, donor2
+SRhi10002.CAGATC.11547	FF:11547-120B8	Mesenchymal Stem Cells - amniotic membrane, donor1
+SRhi10004.ATGTCA.11627	FF:11627-122B7	Mesenchymal Stem Cells - amniotic membrane, donor2
+SRhi10003.CAGATC.11536	FF:11536-120A6	Mesenchymal Stem Cells - bone marrow, donor1
+SRhi10010.GTTTCG.11697	FF:11697-123A5	Mesenchymal Stem Cells - bone marrow, donor3
+SRhi10013.GGTAGC.11464	FF:11464-119B6	Mesenchymal Stem Cells - bone marrow, donor4
+SRhi10013.GCCAAT.11218	FF:11218-116B3	Mesenchymal Stem Cells - hepatic, donor0
+SRhi10004.CAGATC.11538	FF:11538-120A8	Mesenchymal Stem Cells - hepatic, donor1
+SRhi10014.GCCAAT.11214	FF:11214-116A8	Mesenchymal Stem Cells - umbilical, donor0
+SRhi10005.CAGATC.11539	FF:11539-120A9	Mesenchymal Stem Cells - umbilical, donor1
+SRhi10006.ATGTCA.11619	FF:11619-122A8	Mesenchymal Stem Cells - umbilical, donor2
+SRhi10011.GTTTCG.11700	FF:11700-123A8	Mesenchymal Stem Cells - umbilical, donor3
+SRhi10008.CAGATC.11247	FF:11247-116E5	Mesothelial Cells, donor1
+SRhi10007.ATGTCA.11402	FF:11402-118D7	Mesothelial Cells, donor3
+SRhi10008.ATGTCA.11549	FF:11549-120C1	Multipotent Cord Blood Unrestricted Somatic Stem Cells, donor1
+SRhi10009.CAGATC.11629	FF:11629-122B9	Multipotent Cord Blood Unrestricted Somatic Stem Cells, donor2
+SRhi10009.ATGTCA.11241	FF:11241-116D8	Myoblast, donor1
+SRhi10012.GTTTCG.11322	FF:11322-117D8	Myoblast, donor2
+SRhi10010.CAGATC.11398	FF:11398-118D3	Myoblast, donor3
+SRhi10010.ATGTCA.11230	FF:11230-116C6	Natural Killer Cells, donor1
+SRhi10013.GTTTCG.11311	FF:11311-117C6	Natural Killer Cells, donor2
+SRhi10011.CAGATC.11387	FF:11387-118C1	Natural Killer Cells, donor3
+SRhi10014.GTTTCG.11352	FF:11352-117H2	Neural stem cells, donor2
+SRhi10012.CAGATC.11424	FF:11424-118G2	Neural stem cells, donor3
+SRhi10012.ATGTCA.11233	FF:11233-116C9	Neutrophils, donor1
+SRhi10015.GTTTCG.11314	FF:11314-117C9	Neutrophils, donor2
+SRhi10013.CAGATC.11390	FF:11390-118C4	Neutrophils, donor3
+SRhi10013.ATGTCA.11252	FF:11252-116F1	Nucleus Pulposus Cell, donor1
+SRhi10014.CAGATC.11462	FF:11462-119B4	Nucleus Pulposus Cell, donor3
+SRhi10014.ATGTCA.11276	FF:11276-116H7	Osteoblast - differentiated, donor1
+SRhi10003.CGTACG.11353	FF:11353-117H3	Osteoblast - differentiated, donor2
+SRhi10015.CAGATC.11425	FF:11425-118G3	Osteoblast - differentiated, donor3
+SRhi10015.ATGTCA.11277	FF:11277-116H8	Osteoblast, donor1
+SRhi10004.CGTACG.11354	FF:11354-117H4	Osteoblast, donor2
+SRhi10002.ACTTGA.11426	FF:11426-118G4	Osteoblast, donor3
+SRhi10003.ACTTGA.11249	FF:11249-116E7	Pancreatic stromal cells, donor1
+SRhi10002.CCGTCC.11491	FF:11491-119E6	Pericytes, donor1
+SRhi10004.ACTTGA.11652	FF:11652-122E5	Pericytes, donor3
+SRhi10003.CCGTCC.11231	FF:11231-116C7	Peripheral Blood Mononuclear Cells, donor1
+SRhi10005.CGTACG.11312	FF:11312-117C7	Peripheral Blood Mononuclear Cells, donor2
+SRhi10005.ACTTGA.11388	FF:11388-118C2	Peripheral Blood Mononuclear Cells, donor3
+SRhi10004.CCGTCC.11278	FF:11278-116H9	Placental Epithelial Cells, donor1
+SRhi10006.CGTACG.11355	FF:11355-117H5	Placental Epithelial Cells, donor2
+SRhi10008.ACTTGA.11427	FF:11427-118G5	Placental Epithelial Cells, donor3
+SRhi10007.CGTACG.11328	FF:11328-117E5	Preadipocyte - breast, donor2
+SRhi10006.CCGTCC.11468	FF:11468-119C1	Preadipocyte - omental, donor1
+SRhi10008.CGTACG.11329	FF:11329-117E6	Preadipocyte - omental, donor2
+SRhi10010.ACTTGA.11403	FF:11403-118D8	Preadipocyte - omental, donor3
+SRhi10011.ACTTGA.11469	FF:11469-119C2	Preadipocyte - perirenal, donor1
+SRhi10007.CCGTCC.11279	FF:11279-116I1	Preadipocyte - subcutaneous, donor1
+SRhi10009.CGTACG.11356	FF:11356-117H6	Preadipocyte - subcutaneous, donor2
+SRhi10012.ACTTGA.11428	FF:11428-118G6	Preadipocyte - subcutaneous, donor3
+SRhi10008.CCGTCC.11280	FF:11280-116I2	Preadipocyte - visceral, donor1
+SRhi10010.CGTACG.11357	FF:11357-117H7	Preadipocyte - visceral, donor2
+SRhi10013.ACTTGA.11429	FF:11429-118G7	Preadipocyte - visceral, donor3
+SRhi10009.CCGTCC.11253	FF:11253-116F2	Prostate Epithelial Cells (polarized), donor1
+SRhi10011.CGTACG.11331	FF:11331-117E8	Prostate Epithelial Cells, donor2
+SRhi10014.ACTTGA.11404	FF:11404-118D9	Prostate Epithelial Cells, donor3
+SRhi10010.CCGTCC.11254	FF:11254-116F3	Prostate Stromal Cells, donor1
+SRhi10012.CGTACG.11332	FF:11332-117E9	Prostate Stromal Cells, donor2
+SRhi10003.CGATGT.11405	FF:11405-118E1	Prostate Stromal Cells, donor3
+SRhi10002.GATCAG.11516	FF:11516-119H4	Renal Cortical Epithelial Cells, donor1
+SRhi10011.CCGTCC.11517	FF:11517-119H5	Renal Epithelial Cells, donor1
+SRhi10003.GATCAG.11597	FF:11597-120H4	Renal Epithelial Cells, donor2
+SRhi10012.CCGTCC.11514	FF:11514-119H2	Renal Glomerular Endothelial Cells, donor1
+SRhi10004.GATCAG.11594	FF:11594-120H1	Renal Glomerular Endothelial Cells, donor2
+SRhi10013.CCGTCC.11518	FF:11518-119H6	Renal Mesangial Cells, donor1
+SRhi10013.CGTACG.11598	FF:11598-120H5	Renal Mesangial Cells, donor2
+SRhi10014.CCGTCC.11515	FF:11515-119H3	Renal Proximal Tubular Epithelial Cell, donor1
+SRhi10014.CGTACG.11595	FF:11595-120H2	Renal Proximal Tubular Epithelial Cell, donor2
+SRhi10006.GATCAG.11676	FF:11676-122H2	Renal Proximal Tubular Epithelial Cell, donor3
+SRhi10015.CCGTCC.11215	FF:11215-116A9	Retinal Pigment Epithelial Cells, donor0
+SRhi10015.CGTACG.11528	FF:11528-119I7	Retinal Pigment Epithelial Cells, donor1
+SRhi10007.GATCAG.11608	FF:11608-120I6	Retinal Pigment Epithelial Cells, donor2
+SRhi10008.GATCAG.11498	FF:11498-119F4	Schwann Cells, donor1
+SRhi10002.GTAGAG.11220	FF:11220-116B5	Sebocyte, donor1
+SRhi10002.GAGTGG.11301	FF:11301-117B5	Sebocyte, donor2
+SRhi10009.GATCAG.11378	FF:11378-118B1	Sebocyte, donor3
+SRhi10003.GTAGAG.11255	FF:11255-116F4	Sertoli Cells, donor1
+SRhi10010.GATCAG.11333	FF:11333-117F1	Sertoli Cells, donor2
+SRhi10005.GTAGAG.11281	FF:11281-116I3	Skeletal Muscle Cells, donor1
+SRhi10004.GAGTGG.11358	FF:11358-117H8	Skeletal Muscle Cells, donor2
+SRhi10012.GATCAG.11430	FF:11430-118G8	Skeletal Muscle Cells, donor3
+SRhi10006.GTAGAG.11240	FF:11240-116D7	Skeletal Muscle Satellite Cells, donor1
+SRhi10005.GAGTGG.11321	FF:11321-117D7	Skeletal Muscle Satellite Cells, donor2
+SRhi10013.GATCAG.11397	FF:11397-118D2	Skeletal Muscle Satellite Cells, donor3
+SRhi10004.GTAGAG.11282	FF:11282-116I4	Skeletal muscle cells differentiated into Myotubes - multinucleated, donor1
+SRhi10003.GAGTGG.11359	FF:11359-117H9	Skeletal muscle cells differentiated into Myotubes - multinucleated, donor2
+SRhi10007.GTAGAG.11256	FF:11256-116F5	Small Airway Epithelial Cells, donor1
+SRhi10006.GAGTGG.11334	FF:11334-117F2	Small Airway Epithelial Cells, donor2
+SRhi10014.GGTAGC.11406	FF:11406-118E2	Small Airway Epithelial Cells, donor3
+SRhi10009.GTAGAG.11210	FF:11210-116A4	Smooth Muscle Cells - Aortic, donor0
+SRhi10008.GTAGAG.11283	FF:11283-116I5	Smooth Muscle Cells - Aortic, donor1
+SRhi10007.GAGTGG.11360	FF:11360-117I1	Smooth Muscle Cells - Aortic, donor2
+SRhi10010.GTAGAG.11284	FF:11284-116I6	Smooth Muscle Cells - Brachiocephalic, donor1
+SRhi10008.GAGTGG.11361	FF:11361-117I2	Smooth Muscle Cells - Brachiocephalic, donor2
+SRhi10002.TAGCTT.11433	FF:11433-118H2	Smooth Muscle Cells - Brachiocephalic, donor3
+SRhi10011.GTAGAG.11234	FF:11234-116D1	Smooth Muscle Cells - Brain Vascular, donor1
+SRhi10009.GAGTGG.11315	FF:11315-117D1	Smooth Muscle Cells - Brain Vascular, donor2
+SRhi10003.TAGCTT.11391	FF:11391-118C5	Smooth Muscle Cells - Brain Vascular, donor3
+SRhi10004.TAGCTT.11512	FF:11512-119G9	Smooth Muscle Cells - Bronchial, donor1
+SRhi10012.GTAGAG.11285	FF:11285-116I7	Smooth Muscle Cells - Carotid, donor1
+SRhi10010.GAGTGG.11362	FF:11362-117I3	Smooth Muscle Cells - Carotid, donor2
+SRhi10013.GTAGAG.11239	FF:11239-116D6	Smooth Muscle Cells - Colonic, donor1
+SRhi10011.GAGTGG.11320	FF:11320-117D6	Smooth Muscle Cells - Colonic, donor2
+SRhi10006.TAGCTT.11396	FF:11396-118D1	Smooth Muscle Cells - Colonic, donor3
+SRhi10014.GTAGAG.11286	FF:11286-116I8	Smooth Muscle Cells - Coronary Artery, donor1
+SRhi10012.GAGTGG.11363	FF:11363-117I4	Smooth Muscle Cells - Coronary Artery, donor2
+SRhi10007.TAGCTT.11435	FF:11435-118H4	Smooth Muscle Cells - Coronary Artery, donor3
+SRhi10008.TAGCTT.11508	FF:11508-119G5	Smooth Muscle Cells - Esophageal, donor1
+SRhi10015.GTAGAG.11287	FF:11287-116I9	Smooth Muscle Cells - Internal Thoracic Artery, donor1
+SRhi10013.GAGTGG.11364	FF:11364-117I5	Smooth Muscle Cells - Internal Thoracic Artery, donor2
+SRhi10009.TAGCTT.11436	FF:11436-118H5	Smooth Muscle Cells - Internal Thoracic Artery, donor3
+SRhi10002.GTCCGC.11257	FF:11257-116F6	Smooth Muscle Cells - Prostate, donor1
+SRhi10014.GAGTGG.11335	FF:11335-117F3	Smooth Muscle Cells - Prostate, donor2
+SRhi10010.TAGCTT.11465	FF:11465-119B7	Smooth Muscle Cells - Prostate, donor3
+SRhi10003.GTCCGC.11288	FF:11288-117A1	Smooth Muscle Cells - Pulmonary Artery, donor1
+SRhi10015.GAGTGG.11365	FF:11365-117I6	Smooth Muscle Cells - Pulmonary Artery, donor2
+SRhi10011.TAGCTT.11437	FF:11437-118H6	Smooth Muscle Cells - Pulmonary Artery, donor3
+SRhi10004.GTCCGC.11289	FF:11289-117A2	Smooth Muscle Cells - Subclavian Artery, donor1
+SRhi10002.GGTAGC.11366	FF:11366-117I7	Smooth Muscle Cells - Subclavian Artery, donor2
+SRhi10012.TAGCTT.11438	FF:11438-118H7	Smooth Muscle Cells - Subclavian Artery, donor3
+SRhi10013.TAGCTT.11513	FF:11513-119H1	Smooth Muscle Cells - Tracheal, donor1
+SRhi10015.TAGCTT.11212	FF:11212-116A6	Smooth Muscle Cells - Umbilical Artery, donor0
+SRhi10005.GTCCGC.11290	FF:11290-117A3	Smooth Muscle Cells - Umbilical Artery, donor1
+SRhi10003.GGTAGC.11367	FF:11367-117I8	Smooth Muscle Cells - Umbilical Artery, donor2
+SRhi10014.TAGCTT.11439	FF:11439-118H8	Smooth Muscle Cells - Umbilical Artery, donor3
+SRhi10006.GTCCGC.11258	FF:11258-116F7	Smooth Muscle Cells - Uterine, donor1
+SRhi10002.GGCTAC.11466	FF:11466-119B8	Smooth Muscle Cells - Uterine, donor3
+SRhi10007.GTCCGC.11291	FF:11291-117A4	Synoviocyte, donor1
+SRhi10004.GGTAGC.11368	FF:11368-117I9	Synoviocyte, donor2
+SRhi10004.GGCTAC.11440	FF:11440-118H9	Synoviocyte, donor3
+SRhi10008.GTCCGC.11532	FF:11532-120A2	Trabecular Meshwork Cells, donor1
+SRhi10005.GGTAGC.11612	FF:11612-122A1	Trabecular Meshwork Cells, donor2
+SRhi10006.GGTAGC.11369	FF:11369-118A1	Tracheal Epithelial Cells, donor2
+SRhi10005.CGATGT.11441	FF:11441-118I1	Tracheal Epithelial Cells, donor3
+SRhi10009.GGCTAC.11216	FF:11216-116B1	Urothelial Cells, donor0
+SRhi10013.GTCCGC.11520	FF:11520-119H8	Urothelial Cells, donor1
+SRhi10010.GGTAGC.11600	FF:11600-120H7	Urothelial Cells, donor2
+SRhi10003.TTAGGC.12237	FF:12237-129G5	amniotic membrane cells, donor3
+SRhi10013.TTAGGC.12240	FF:12240-129G8	chorionic membrane cells, donor3
+SRhi10084.CCGTCC.4534	4534-67I8	CD19+ B Lymphocytes (cytosolic)
+SRhi10042.GAGTGG.3952+3953	3952-67E2+3953-67G2	Fibroblast - Dermal (cytosolic)
+SRhi10042.AGTCAA.3997	3997-67C9	CD3+ T Lymphocytes (cytosolic)
+SRhi10084.GTAGAG.4533	4533-67H8	CD19+ B Lymphocytes (nuclear)
+SRhi10042.GGTAGC.4474+4483	4474-67D2+4483-67F2	Fibroblast - Dermal (nuclear)
+SRhi10042.AGTTCC.4475	4475-67B9	CD3+ T Lymphocytes (nuclear)
+SRhi10037.AGTTCC.3902	3902-67D7	Embryonic Stem cell (cytosolic)
+SRhi10037.CGTACG.3903	3903-67F7	Embryonic Stem cell (cytosolic)
+SRhi10037.GGTAGC.3904	3904-67H7	Embryonic Stem cell (cytosolic)
+SRhi10037.AGTCAA.4535	4535-67C7	Embryonic Stem cell (nuclear)
+SRhi10037.ATGTCA.4536	4536-67E7	Embryonic Stem cell (nuclear)
+SRhi10037.GAGTGG.4537	4537-67G7	Embryonic Stem cell (nuclear)
+SRhi10043.GTGAAA.4080+4081	4080-67H7+4081-67A8	iPS derived from CD19+ B Lymphocytes (cytosolic)
+SRhi10043.GTTTCG.4084	4084-67G8	iPS derived from Dermal Fibroblast (cytosolic)
+SRhi10043.GTAGAG.4082+4083	4082-67C8+4083-67E8	iPS derived from CD3+ T Lymphocytes (cytosolic)
+SRhi10043.GTCCGC.4538+4539	4538-67G7+4539-67I7	iPS derived from CD19+ B Lymphocytes (nuclear)
+SRhi10043.CGTACG.4542	4542-67F8	iPS derived from Dermal Fibroblast (nuclear)
+SRhi10043.GTGGCC.4540+4541	4540-67B8+4541-67D8	iPS derived from CD3+ T Lymphocytes (nuclear)
+SRhi10066.CCGTCC.13553	FF:13553-145I7	COBL-a rinderpest infection, 00hr, biol_rep1
+SRhi10066.GTAGAG.13554	FF:13554-145I8	COBL-a rinderpest infection, 00hr, biol_rep2
+SRhi10066.GTCCGC.13555	FF:13555-145I9	COBL-a rinderpest infection, 00hr, biol_rep3
+SRhi10066.GTGAAA.13562	FF:13562-146A7	COBL-a rinderpest infection, 24hr, biol_rep1
+SRhi10066.GTGGCC.13563	FF:13563-146A8	COBL-a rinderpest infection, 24hr, biol_rep2
+SRhi10066.GTTTCG.13564	FF:13564-146A9	COBL-a rinderpest infection, 24hr, biol_rep3
+SRhi10066.CGTACG.13574	FF:13574-146C1	COBL-a rinderpest(-C) infection, 24hr, biol_rep1
+SRhi10066.GAGTGG.13575	FF:13575-146C2	COBL-a rinderpest(-C) infection, 24hr, biol_rep2
+SRhi10066.GGTAGC.13576	FF:13576-146C3	COBL-a rinderpest(-C) infection, 24hr, biol_rep3
+SRhi10012.ACAGTG.12626	FF:12626-134E7	H9 Embryonic Stem cells, biol_rep1 (H9ES-1)
+SRhi10062.CCGTCC.12260	FF:12260-130A1	Lymphatic Endothelial cells response to VEGFC, 00hr00min, biol_rep1 (MM XIX - 1)
+SRhi10062.GTAGAG.12382	FF:12382-131E6	Lymphatic Endothelial cells response to VEGFC, 00hr00min, biol_rep2 (MM XIV - 1)
+SRhi10062.GTCCGC.12504	FF:12504-133A2	Lymphatic Endothelial cells response to VEGFC, 00hr00min, biol_rep3 (MM XXII - 1)
+SRhi10062.GTGAAA.12264	FF:12264-130A5	Lymphatic Endothelial cells response to VEGFC, 01hr00min, biol_rep1 (MM XIX - 5)
+SRhi10062.GTGGCC.12386	FF:12386-131F1	Lymphatic Endothelial cells response to VEGFC, 01hr00min, biol_rep2 (MM XIV - 5)
+SRhi10062.GTTTCG.12508	FF:12508-133A6	Lymphatic Endothelial cells response to VEGFC, 01hr00min, biol_rep3 (MM XXII - 5)
+SRhi10062.CGTACG.12267	FF:12267-130A8	Lymphatic Endothelial cells response to VEGFC, 02hr00min, biol_rep1 (MM XIX - 8)
+SRhi10062.GAGTGG.12389	FF:12389-131F4	Lymphatic Endothelial cells response to VEGFC, 02hr00min, biol_rep2 (MM XIV - 8)
+SRhi10062.GGTAGC.12511	FF:12511-133A9	Lymphatic Endothelial cells response to VEGFC, 02hr00min, biol_rep3 (MM XXII - 8)
+SRhi10063.ATCACG.12271	FF:12271-130B3	Lymphatic Endothelial cells response to VEGFC, 04hr00min, biol_rep1 (MM XIX - 12)
+SRhi10063.CGATGT.12393	FF:12393-131F8	Lymphatic Endothelial cells response to VEGFC, 04hr00min, biol_rep2 (MM XIV - 12)
+SRhi10063.TTAGGC.12515	FF:12515-133B4	Lymphatic Endothelial cells response to VEGFC, 04hr00min, biol_rep3 (MM XXII - 12)
+SRhi10063.TGACCA.12275	FF:12275-130B7	Lymphatic Endothelial cells response to VEGFC, 08hr00min, biol_rep1 (MM XIX - 16)
+SRhi10063.ACAGTG.12397	FF:12397-131G3	Lymphatic Endothelial cells response to VEGFC, 08hr00min, biol_rep2 (MM XIV - 16)
+SRhi10063.GCCAAT.12519	FF:12519-133B8	Lymphatic Endothelial cells response to VEGFC, 08hr00min, biol_rep3 (MM XXII - 16)
+SRhi10063.CAGATC.13031	FF:13031-139E7	MCF7 breast cancer cell line response to EGF1, 00hr00min, biol_rep1
+SRhi10063.ACTTGA.13097	FF:13097-140D1	MCF7 breast cancer cell line response to EGF1, 00hr00min, biol_rep2
+SRhi10063.GATCAG.13163	FF:13163-141B4	MCF7 breast cancer cell line response to EGF1, 00hr00min, biol_rep3
+SRhi10063.AGTCAA.13048	FF:13048-139G6	MCF7 breast cancer cell line response to HRG, 00hr15min, biol_rep1
+SRhi10063.AGTTCC.13114	FF:13114-140E9	MCF7 breast cancer cell line response to HRG, 00hr15min, biol_rep2
+SRhi10063.ATGTCA.13180	FF:13180-141D3	MCF7 breast cancer cell line response to HRG, 00hr15min, biol_rep3
+SRhi10063.GTGAAA.13049	FF:13049-139G7	MCF7 breast cancer cell line response to HRG, 00hr30min, biol_rep1
+SRhi10063.GTGGCC.13115	FF:13115-140F1	MCF7 breast cancer cell line response to HRG, 00hr30min, biol_rep2
+SRhi10063.GTTTCG.13181	FF:13181-141D4	MCF7 breast cancer cell line response to HRG, 00hr30min, biol_rep3
+SRhi10063.CGTACG.13050	FF:13050-139G8	MCF7 breast cancer cell line response to HRG, 00hr45min, biol_rep1
+SRhi10063.GAGTGG.13116	FF:13116-140F2	MCF7 breast cancer cell line response to HRG, 00hr45min, biol_rep2
+SRhi10063.GGTAGC.13182	FF:13182-141D5	MCF7 breast cancer cell line response to HRG, 00hr45min, biol_rep3
+SRhi10063.CCGTCC.13051	FF:13051-139G9	MCF7 breast cancer cell line response to HRG, 01hr00min, biol_rep1
+SRhi10063.GTAGAG.13117	FF:13117-140F3	MCF7 breast cancer cell line response to HRG, 01hr00min, biol_rep2
+SRhi10063.GTCCGC.13183	FF:13183-141D6	MCF7 breast cancer cell line response to HRG, 01hr00min, biol_rep3
+SRhi10064.TGACCA.13052	FF:13052-139H1	MCF7 breast cancer cell line response to HRG, 01hr20min, biol_rep1
+SRhi10064.ACAGTG.13118	FF:13118-140F4	MCF7 breast cancer cell line response to HRG, 01hr20min, biol_rep2
+SRhi10064.GCCAAT.13184	FF:13184-141D7	MCF7 breast cancer cell line response to HRG, 01hr20min, biol_rep3
+SRhi10063.TAGCTT.13053	FF:13053-139H2	MCF7 breast cancer cell line response to HRG, 01hr40min, biol_rep1
+SRhi10063.GGCTAC.13119	FF:13119-140F5	MCF7 breast cancer cell line response to HRG, 01hr40min, biol_rep2
+SRhi10063.CTTGTA.13185	FF:13185-141D8	MCF7 breast cancer cell line response to HRG, 01hr40min, biol_rep3
+SRhi10064.ATCACG.13058	FF:13058-139H7	MCF7 breast cancer cell line response to HRG, 04hr, biol_rep1
+SRhi10064.CGATGT.13124	FF:13124-140G1	MCF7 breast cancer cell line response to HRG, 04hr, biol_rep2
+SRhi10064.TTAGGC.13190	FF:13190-141E4	MCF7 breast cancer cell line response to HRG, 04hr, biol_rep3
+SRhi10064.ACTTGA.13128	FF:13128-140G5	MCF7 breast cancer cell line response to HRG, 08hr, biol_rep2
+SRhi10064.GATCAG.13194	FF:13194-141E8	MCF7 breast cancer cell line response to HRG, 08hr, biol_rep3
+SRhi10065.GTGAAA.12662	FF:12662-134I7	Saos-2 osteosarcoma treated with ascorbic acid and BGP to induce calcification, 00hr00min, biol_rep1 (A1 T0)
+SRhi10065.GTGGCC.12760	FF:12760-136B6	Saos-2 osteosarcoma treated with ascorbic acid and BGP to induce calcification, 00hr00min, biol_rep2 (A2 T0)
+SRhi10065.GTTTCG.12858	FF:12858-137D5	Saos-2 osteosarcoma treated with ascorbic acid and BGP to induce calcification, 00hr00min, biol_rep3 (A3 T0)
+SRhi10066.CAGATC.12666	FF:12666-135A2	Saos-2 osteosarcoma treated with ascorbic acid and BGP to induce calcification, 01hr00min, biol_rep1 (A1 T4)
+SRhi10066.ACTTGA.12764	FF:12764-136C1	Saos-2 osteosarcoma treated with ascorbic acid and BGP to induce calcification, 01hr00min, biol_rep2 (A2 T4)
+SRhi10066.GATCAG.12862	FF:12862-137D9	Saos-2 osteosarcoma treated with ascorbic acid and BGP to induce calcification, 01hr00min, biol_rep3 (A3 T4)
+SRhi10065.CGTACG.12674	FF:12674-135B1	Saos-2 osteosarcoma treated with ascorbic acid and BGP to induce calcification, 24hr, biol_rep1 (A1 T12)
+SRhi10065.GAGTGG.12772	FF:12772-136C9	Saos-2 osteosarcoma treated with ascorbic acid and BGP to induce calcification, 24hr, biol_rep2 (A2 T12)
+SRhi10065.GGTAGC.12870	FF:12870-137E8	Saos-2 osteosarcoma treated with ascorbic acid and BGP to induce calcification, 24hr, biol_rep3 (A3 T12)
+SRhi10066.TGACCA.12675	FF:12675-135B2	Saos-2 osteosarcoma treated with ascorbic acid and BGP to induce calcification, day04, biol_rep1 (A1 T13)
+SRhi10066.ACAGTG.12773	FF:12773-136D1	Saos-2 osteosarcoma treated with ascorbic acid and BGP to induce calcification, day04, biol_rep2 (A2 T13)
+SRhi10066.GCCAAT.12871	FF:12871-137E9	Saos-2 osteosarcoma treated with ascorbic acid and BGP to induce calcification, day04, biol_rep3 (A3 T13)
+SRhi10066.ATCACG.12679	FF:12679-135B6	Saos-2 osteosarcoma treated with ascorbic acid and BGP to induce calcification, day28, biol_rep1 (A1 T17)
+SRhi10066.CGATGT.12777	FF:12777-136D5	Saos-2 osteosarcoma treated with ascorbic acid and BGP to induce calcification, day28, biol_rep2 (A2 T17)
+SRhi10066.TTAGGC.12875	FF:12875-137F4	Saos-2 osteosarcoma treated with ascorbic acid and BGP to induce calcification, day28, biol_rep3 (A3 T17)
+SRhi10064.CGTACG.13229	FF:13229-141I7	mesenchymal stem cells (adipose derived), adipogenic induction, 00hr00min, biol_rep1
+SRhi10064.GAGTGG.13230	FF:13230-141I8	mesenchymal stem cells (adipose derived), adipogenic induction, 00hr00min, biol_rep2
+SRhi10064.GGTAGC.13231	FF:13231-141I9	mesenchymal stem cells (adipose derived), adipogenic induction, 00hr00min, biol_rep3
+SRhi10065.CAGATC.13250	FF:13250-142C1	mesenchymal stem cells (adipose derived), adipogenic induction, 02hr00min, biol_rep1
+SRhi10065.ACTTGA.13251	FF:13251-142C2	mesenchymal stem cells (adipose derived), adipogenic induction, 02hr00min, biol_rep2
+SRhi10065.GATCAG.13252	FF:13252-142C3	mesenchymal stem cells (adipose derived), adipogenic induction, 02hr00min, biol_rep3
+SRhi10065.TGACCA.13259	FF:13259-142D1	mesenchymal stem cells (adipose derived), adipogenic induction, 12hr00min, biol_rep1
+SRhi10065.ACAGTG.13260	FF:13260-142D2	mesenchymal stem cells (adipose derived), adipogenic induction, 12hr00min, biol_rep2
+SRhi10065.GCCAAT.13261	FF:13261-142D3	mesenchymal stem cells (adipose derived), adipogenic induction, 12hr00min, biol_rep3
+SRhi10065.TAGCTT.13265	FF:13265-142D7	mesenchymal stem cells (adipose derived), adipogenic induction, day02, biol_rep1
+SRhi10065.GGCTAC.13266	FF:13266-142D8	mesenchymal stem cells (adipose derived), adipogenic induction, day02, biol_rep2
+SRhi10065.CTTGTA.13267	FF:13267-142D9	mesenchymal stem cells (adipose derived), adipogenic induction, day02, biol_rep3
+SRhi10065.AGTCAA.13268	FF:13268-142E1	mesenchymal stem cells (adipose derived), adipogenic induction, day04, biol_rep1
+SRhi10065.AGTTCC.13269	FF:13269-142E2	mesenchymal stem cells (adipose derived), adipogenic induction, day04, biol_rep2
+SRhi10065.ATGTCA.13270	FF:13270-142E3	mesenchymal stem cells (adipose derived), adipogenic induction, day04, biol_rep3
+SRhi10065.CCGTCC.13271	FF:13271-142E4	mesenchymal stem cells (adipose derived), adipogenic induction, day08, biol_rep1
+SRhi10065.GTAGAG.13272	FF:13272-142E5	mesenchymal stem cells (adipose derived), adipogenic induction, day08, biol_rep2
+SRhi10065.GTCCGC.13273	FF:13273-142E6	mesenchymal stem cells (adipose derived), adipogenic induction, day08, biol_rep3
+SRhi10065.ATCACG.13274	FF:13274-142E7	mesenchymal stem cells (adipose derived), adipogenic induction, day12, biol_rep1
+SRhi10065.CGATGT.13275	FF:13275-142E8	mesenchymal stem cells (adipose derived), adipogenic induction, day12, biol_rep2
+SRhi10065.TTAGGC.13276	FF:13276-142E9	mesenchymal stem cells (adipose derived), adipogenic induction, day12, biol_rep3
+SRhi10006.ACTTGA.10160	FF:10160-103A7	pineal gland, adult, donor10252
+SRhi10007.ACTTGA.10162	FF:10162-103A9	pituitary gland, adult, donor10252
+SRhi10003.GGCTAC.10159	FF:10159-103A6	spinal cord, adult, donor10252
