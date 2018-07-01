@@ -2,6 +2,9 @@
 This software evaluates enrichment of genome-wide association study (**GWAS**) signals on **mi**RNA-target gene networks (***MIGWAS***) and partition them into various human tissues with the help of tissue specific miRNA expression data.
 
 ## Overview
+<div align="center">
+<img src="https://raw.githubusercontent.com/saorisakaue/MIGWAS/images/images/GraphicalAbst.png" width=60%>
+</div>
 
 ## Requirements
 - python 3.X
