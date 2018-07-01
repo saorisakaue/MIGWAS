@@ -1,11 +1,12 @@
 # MIGWAS
-This software evaluates enrichment of genome-wide association study (GWAS) signals on miRNA-target gene networks (MIGWAS) and partition them into various human tissues with the help of tissue specific miRNA expression data.
+This software evaluates enrichment of genome-wide association study (**GWAS**) signals on **mi**RNA-target gene networks (***MIGWAS***) and partition them into various human tissues with the help of tissue specific miRNA expression data.
 
 ## Overview
 
 ## Requirements
 - python 3.X
 - scipy
+- numpy
 - pandas
 - six
 - argparse
@@ -66,7 +67,7 @@ $ python3 ./migwas.py --phenotype RA_trans --out miRA_RA [--cpus 4] --iterations
 | `--phenotype`, `-p` | Name of the phenotype of interest (file name prefix from minimgnt output). | Yes | None |
 | `--out`, `-o` | Output file prefix. | Yes | "your_migwas" |
 | `--cpus`, `-j` | Number of CPUs to be used. | No | 1 |
-| `--iterations`, `-i` | Number of iterations to simulate null distributions.| Yes | 20000 |
+| `--iterations`, `-i` | Number of permutations to simulate null distributions.| Yes | 20000 |
 | `--output-candidate`, `-c` | If you want to output a list of candidate miRNAs and genes associated with the trait, set this flag.| No | False |
 
 ## Output
