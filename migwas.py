@@ -5,7 +5,6 @@ import gzip
 import pandas as pd
 import numpy as np
 from itertools import repeat
-import random
 from scipy.stats import norm
 import math
 from multiprocessing import Pool

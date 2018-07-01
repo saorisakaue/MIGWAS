@@ -14,6 +14,11 @@ This software evaluates enrichment of genome-wide association study (GWAS) signa
 - futures
 
 ## Installation
+In order to get started with *MIGWAS*, you can just clone this repo as follows;
+```bash
+git clone https://github.com/saorisakaue/MIGWAS
+cd ./MIGWAS
+```
 
 ## Usage
 ### Step 0: Prepare your input
@@ -46,7 +51,7 @@ $ python3 ./minimgnt.py score_filename --out RA_trans [--cpus 4] [--not-remove-H
 | `--remove-NA` | remove genes with NA score from the output. | No | False |
 | `--no-rsid` | use this flag when a score file doesn't contain a rsID column. | No | False　|
 
-Output files will be generated at `./miRNA_P` and `gene_P`.
+Output files will be generated at `./miRNA_P/` and `./gene_P/`.
 
 ### Step 2: MIGWAS analysis for all tissues and specific tissues
 
@@ -76,6 +81,7 @@ keratinocyte	0.3550971896625686	0.7721248194464695
 Each cell's partitioned enrichment *P* value and fold change, as well as miRNA-gene enrichment for all tissues will be described.
 
 ## Acknowledgements
+* Tissue specific miRNA-gene enrichment analysis was made possible by the awesome work from [FANTOM5](http://fantom.gsc.riken.jp/5/), a comprehensive expression catalog of miRNA expression in varitous human cells. The original data can be found [here](http://fantom.gsc.riken.jp/5/suppl/De_Rie_et_al_2017/vis_viewer/#/human#srna;miRNA;hsa-miR-6859-5p).
 * The original [MAGENTA](https://www.broadinstitute.org/mpg/magenta/) was written by Ayellet Segre, Mark Daly, and David Altshuler of The Broad Institute.
     * Ayellet V. Segrè, DIAGRAM Consortium, MAGIC investigators, Leif Groop, Vamsi K. Mootha, Mark J. Daly, and David Altshuler (2010). **Common Inherited Variation in Mitochondrial Genes is not Enriched for Associations with Type 2 Diabetes or Related Glycemic Traits.** [PLoS Genetics Aug 12;6(8). pii: e1001058.](http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1001058)
 * Minimgnt (miniMAGENTA) part was written by [Masahiro Kanai](http://mkanai.github.io/), reimplementing the calculation of "gene associatino score" feature in Python.
