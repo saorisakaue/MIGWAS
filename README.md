@@ -68,10 +68,11 @@ $ python3 ./migwas.py --phenotype RA_trans --out miRA_RA [--cpus 4] --iterations
 | Option name | Descriptions | Required | Default |
 |:-----------:|:------------|:------------:|:------------|
 | `--phenotype`, `-p` | Name of the phenotype of interest (file name prefix from minimgnt output). | Yes | None |
-| `--out`, `-o` | Output file prefix. | Yes | "your_migwas" |
+| `--out`, `-o` | Output file prefix. | No | "your_migwas" |
 | `--cpus`, `-j` | Number of CPUs to be used. | No | 1 |
-| `--iterations`, `-i` | Number of permutations to simulate null distributions.| Yes | 20000 |
+| `--iterations`, `-i` | Number of permutations to simulate null distributions.| No | 20000 |
 | `--output-candidate`, `-c` | If you want to output a list of candidate miRNAs and genes associated with the trait, set this flag.| No | False |
+|`--tsi`, `-t`|Tissue specificity index threshold for partitioning miRNA's enrichment signal. Details will be in our article.|No|0.7|
 
 ## Output
 The example output is as follows;

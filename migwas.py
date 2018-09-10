@@ -23,13 +23,14 @@ parser.add_argument('--phenotype', '-p', default=None, type=str,
     help='Name of the phenotype of interest (file name prefix from minimgnt output).',
     required=True)
 parser.add_argument('--out', '-o', default="your_migwas", type=str,
-    help='Output file prefix.',
-    required=True)
+    help='Output file prefix.')
 parser.add_argument('--cpus', '-j', default=1, type=int,
     help='Number of CPUs to be used.')
+parser.add_argument('--tsi', '-t', default=0.7, type=float,
+    help='Tissue specificity index threshold for partitioning miRNA enrichment signal.',
+    required=False)
 parser.add_argument('--iterations', '-i', default=20000, type=int,
-    help='Number of iterations to simulate null distributions.',
-    required=True)
+    help='Number of iterations to simulate null distributions.')
 parser.add_argument('--output-candidate', '-c', default=False, action='store_true',
     help='If you want to output a list of candidate miRNAs and genes associated with the trait, set this flag.',
     required=False)
@@ -93,7 +94,7 @@ max_row = max_row.values
 Exp_diff = 1-Matrix_mean_exp.div(max_row,axis=0)
 TSI = pd.Series(Exp_diff.apply(sum,axis=1)/(len(Matrix_mean_exp.columns)-1),index=Exp.index)
 #get tissue specific miRNA list and exp matrix
-Sig_TSI = TSI[TSI>0.7]
+Sig_TSI = TSI[TSI>args.tsi]
 Sig_TSI_miRNA = list(Sig_TSI.index)
 Analyze_miRNA = []
 for mirna in Sig_TSI_miRNA:
