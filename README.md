@@ -8,7 +8,9 @@ This software evaluates enrichment of genome-wide association study (**GWAS**) s
 
 ## Publication/Citation
 Our paper will appear soon!
+
 Sakaue S. et al. Integration of genetics and miRNA-target gene network identified disease biology implicated in tissue specificity. *Nucleic Acids Reseach.* In Press.
+
 Please cite this paper if you use the software or any material in this repository.
 
 ## Requirements
