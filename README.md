@@ -6,6 +6,11 @@ This software evaluates enrichment of genome-wide association study (**GWAS**) s
 <img src="https://raw.githubusercontent.com/saorisakaue/MIGWAS/images/images/GraphicalAbst.png" width=60%>
 </div>
 
+## Publication/Citation
+Our paper will appear soon!
+Sakaue S. et al. Integration of genetics and miRNA-target gene network identified disease biology implicated in tissue specificity. *Nucleic Acids Reseach.* In Press.
+Please cite this paper if you use the software or any material in this repository.
+
 ## Requirements
 - python 3.X
 - scipy
