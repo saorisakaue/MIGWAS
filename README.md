@@ -51,7 +51,7 @@ The example command is as follows;
 ```bash
 $ python3 ./minimgnt.py score_filename --out output_prefix [--cpus 4] [--not-remove-HLA] [--remove-NA] --no-rsid
 ```
-**Note! Our example data file `./example/RA_trans.chr12.pos.P.txt` only contains chr12 summary statistics (due to the size limitation on GitHub), while the subsequent analysis assumes genome-wide one.**
+*Note! Our example data file `./example/RA_trans.chr12.pos.P.txt` only contains chr12 summary statistics (due to the size limitation on GitHub), while the subsequent analysis assumes genome-wide one.*
 
 #### Arguments and options
 * *`score_filename`* : GWAS summary statistics.
