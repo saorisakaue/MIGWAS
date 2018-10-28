@@ -46,11 +46,13 @@ All you need is a text file with GWAS summary statistics.
 Please have a look at an example input at `./example/RA_trans.chr12.pos.P.txt` (RA GWAS result at chr12).
 
 ### Step 1: GWAS summary to gene- and miRNA- level *P* values
-This part is based on the excelent work by Masahiro Kanai, which was implemented to calculate the corrected "gene association score" from a GWAS result, according to [MAGENTA](https://www.broadinstitute.org/mpg/magenta/)'s method. For detailed explanations, please visit [the original repository](https://github.com/mkanai/minimgnt).
+This part is based on the excelent work by Masahiro Kanai, which was implemented to calculate the corrected "gene association score" from a GWAS result, according to [MAGENTA](https://www.broadinstitute.org/mpg/magenta/)'s method. For detailed explanations, please visit [the original repository](https://github.com/mkanai/minimgnt). Do take care of the input format of the summary statistics.
 The example command is as follows;
 ```bash
-$ python3 ./minimgnt.py score_filename --out RA_trans [--cpus 4] [--not-remove-HLA] [--remove-NA] --no-rsid
+$ python3 ./minimgnt.py score_filename --out output_prefix [--cpus 4] [--not-remove-HLA] [--remove-NA] --no-rsid
 ```
+*Note! Our example data file `./example/RA_trans.chr12.pos.P.txt` only contains chr12 summary statistics (due to the size limitation on GitHub), while the subsequent analysis assumes genome-wide one.*
+
 #### Arguments and options
 * *`score_filename`* : GWAS summary statistics.
 
