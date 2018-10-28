@@ -65,10 +65,13 @@ def calc_corr_gene_score(confounders, uncorr_score, cutoff=0.05):
     for j in six.moves.range(n_confounders):
         if pval[j] <= cutoff:
             residuals = residuals - beta[j] * confounders[:, j]
-
+    # residuals must be finite for np.mean/std
+    #                   not nan for cdf (avoid warnings)
     cond_residuals_finite = np.isfinite(residuals)
-    corr_score = 1 - sp.stats.norm.cdf(residuals,
-                                       np.mean(residuals[cond_residuals_finite]),
-                                       np.std(residuals[cond_residuals_finite]))
+    cond_residuals_nnan = np.logical_not(np.isnan(residuals))
+    corr_score = np.tile(np.nan, len(residuals))
+    corr_score[cond_residuals_nnan] = 1 - sp.stats.norm.cdf(residuals[cond_residuals_nnan],
+                                                            np.mean(residuals[cond_residuals_finite]),
+                                                            np.std(residuals[cond_residuals_finite]))
     return (corr_score, residuals)
 
