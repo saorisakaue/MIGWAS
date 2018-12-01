@@ -84,7 +84,7 @@ $ python3 ./migwas.py --phenotype RA_trans --out miRA_RA [--cpus 4] --iterations
 |`--tsi`, `-t`|Tissue specificity index threshold for partitioning miRNA's enrichment signal. Details will be in our article.|No|0.7|
 
 ## Output
-The example enritchment resut output is as follows;
+1) The example enritchment resut output is as follows;
 ```bash
 $ head miRA_RA_migwas_result.txt
 #tissue	P_value	Fold_change
@@ -94,7 +94,7 @@ keratinocyte	0.3550971896625686	0.7721248194464695
 ```
 Each cell's partitioned enrichment *P* value and fold change, as well as miRNA-gene enrichment for all tissues will be described.
 
-The example candidate output is as follows;
+2) The example candidate output is as follows;
 ```bash
 $ head DIAGRAM_DM_candidates.txt
 99	ZNF148	hsa-mir-548aq	MIMAT0022263
