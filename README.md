@@ -94,6 +94,23 @@ keratinocyte	0.3550971896625686	0.7721248194464695
 ```
 Each cell's partitioned enrichment *P* value and fold change, as well as miRNA-gene enrichment for all tissues will be described.
 
+The example candidate output is as follows;
+```bash
+$ head DIAGRAM_DM_candidates.txt
+99	ZNF148	hsa-mir-548aq	MIMAT0022263
+99	ZNF148	hsa-mir-548aq	MIMAT0022264
+99	C5orf24	hsa-mir-548aq	MIMAT0022263
+99	C5orf24	hsa-mir-548aq	MIMAT0022264
+```
+| Column | Descriptions |
+|:-----------:|:------------|
+|1|The percentile of scores indicating gene-miRNA target prediction certainty.|
+|2|The target gene gene symbol.|
+|3|The miRNA ID.|
+|4|The mature miRNA ID.|
+
+Please note that the candidate output holds redundancy, because the pairs supported by higher scorea should be included the those with lower scores.
+
 ## Acknowledgements
 * Tissue specific miRNA-gene enrichment analysis was made possible by the awesome work from [FANTOM5](http://fantom.gsc.riken.jp/5/), a comprehensive expression catalog of miRNA expression in varitous human cells. The original data can be found [here](http://fantom.gsc.riken.jp/5/suppl/De_Rie_et_al_2017/vis_viewer/#/human#srna;miRNA;hsa-miR-6859-5p).
 * The original [MAGENTA](https://www.broadinstitute.org/mpg/magenta/) was written by Ayellet Segre, Mark Daly, and David Altshuler of The Broad Institute.
