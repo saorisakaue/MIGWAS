@@ -111,7 +111,7 @@ Each row shows the candidate trait-associated miRNA-gene pairs.
 |3|The miRNA ID.|
 |4|The mature miRNA ID.|
 
-Please note that the candidate output list holds redundancy, because the pairs supported by higher scorea should be included the those with lower scores.
+Please note that the candidate output list holds redundancy, because the pairs supported by higher score are included those with lower scores.
 
 ## Acknowledgements
 * Tissue specific miRNA-gene enrichment analysis was made possible by the awesome work from [FANTOM5](http://fantom.gsc.riken.jp/5/), a comprehensive expression catalog of miRNA expression in varitous human cells. The original data can be found [here](http://fantom.gsc.riken.jp/5/suppl/De_Rie_et_al_2017/vis_viewer/#/human#srna;miRNA;hsa-miR-6859-5p).
